@@ -144,10 +144,4 @@ Instead of pretending to know everything about a user's finances, FinI is honest
 
 ---
 
-# 📄 License
-
-This project is proprietary.
-
-All rights reserved.
-
 Unauthorized copying, modification, distribution, or commercial use is prohibited without prior written permission.
