@@ -1,0 +1,10 @@
+services:
+  fini:
+    build: .
+    container_name: fini-app
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - FIREWORKS_API_KEY=${FIREWORKS_API_KEY}
+    restart: always

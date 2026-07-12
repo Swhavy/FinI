@@ -1,0 +1,6 @@
+{
+  "name": "FinI",
+  "description": "FinI (Financial Identity) is an AI-first financial operating system designed to analyze and profile your behavioral relationship with money, featuring cash confidence metrics, personality profiles, and the Arc AI Companion.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

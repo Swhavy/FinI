@@ -1,0 +1,852 @@
+{
+  "activeUserId": "u_789",
+  "users": {
+    "u_123": {
+      "id": "u_123",
+      "displayName": "Chidi Okafor",
+      "phone": "+2348012345678",
+      "createdAt": "2026-05-07T15:00:00.000Z",
+      "onboardingComplete": true,
+      "profile": {
+        "userType": "student",
+        "riskComfort": "cautious",
+        "goals": [
+          "build_savings_habit",
+          "understand_spending"
+        ],
+        "tone": "direct_friendly"
+      },
+      "settings": {
+        "cashExpiryDays": 7,
+        "flagSensitivity": "medium",
+        "currency": "NGN"
+      },
+      "stats": {
+        "avgBurnCycleDays": 2.5,
+        "unallocatedRatio30d": 0.45
+      }
+    },
+    "u_456": {
+      "id": "u_456",
+      "displayName": "Funmi Alao",
+      "phone": "+2348123456789",
+      "createdAt": "2026-04-07T15:00:00.000Z",
+      "onboardingComplete": true,
+      "profile": {
+        "userType": "trader",
+        "riskComfort": "balanced",
+        "goals": [
+          "understand_spending",
+          "track_business_cash"
+        ],
+        "tone": "direct_friendly"
+      },
+      "settings": {
+        "cashExpiryDays": 5,
+        "flagSensitivity": "high",
+        "currency": "NGN"
+      },
+      "stats": {
+        "avgBurnCycleDays": 4,
+        "unallocatedRatio30d": 0.15
+      }
+    },
+    "u_789": {
+      "id": "u_789",
+      "displayName": "Emeka Obi",
+      "phone": "+2348098765432",
+      "createdAt": "2026-05-22T15:00:00.000Z",
+      "onboardingComplete": true,
+      "profile": {
+        "userType": "salaried",
+        "riskComfort": "bold",
+        "goals": [
+          "build_savings_habit"
+        ],
+        "tone": "direct_friendly",
+        "learnedPersonality": "A salaried earner actively growing their savings through interest while smartly balancing bold financial goals with everyday cash needs."
+      },
+      "settings": {
+        "cashExpiryDays": 14,
+        "flagSensitivity": "low",
+        "currency": "NGN"
+      },
+      "stats": {
+        "avgBurnCycleDays": 8.5,
+        "unallocatedRatio30d": 0.28
+      }
+    }
+  },
+  "bankAccounts": {
+    "acc_1": {
+      "id": "acc_1",
+      "userId": "u_123",
+      "provider": "mono",
+      "institution": "GTBank",
+      "monoAccountId": "acc_mono_chidi",
+      "status": "connected",
+      "linkedAt": "2026-05-08T01:00:00.000Z"
+    },
+    "acc_1_kuda": {
+      "id": "acc_1_kuda",
+      "userId": "u_123",
+      "provider": "mono",
+      "institution": "Kuda Bank",
+      "monoAccountId": "acc_mono_chidi_kuda",
+      "status": "connected",
+      "linkedAt": "2026-06-07T02:00:00.000Z"
+    },
+    "acc_2": {
+      "id": "acc_2",
+      "userId": "u_456",
+      "provider": "mono",
+      "institution": "Access Bank",
+      "monoAccountId": "acc_mono_funmi",
+      "status": "connected",
+      "linkedAt": "2026-04-08T01:00:00.000Z"
+    },
+    "acc_2_providus": {
+      "id": "acc_2_providus",
+      "userId": "u_456",
+      "provider": "mono",
+      "institution": "Providus Bank",
+      "monoAccountId": "acc_mono_funmi_providus",
+      "status": "connected",
+      "linkedAt": "2026-05-27T23:00:00.000Z"
+    },
+    "acc_3": {
+      "id": "acc_3",
+      "userId": "u_789",
+      "provider": "mono",
+      "institution": "Zenith Bank",
+      "monoAccountId": "acc_mono_emeka",
+      "status": "connected",
+      "linkedAt": "2026-05-23T01:00:00.000Z"
+    },
+    "acc_3_opay": {
+      "id": "acc_3_opay",
+      "userId": "u_789",
+      "provider": "mono",
+      "institution": "OPay",
+      "monoAccountId": "acc_mono_emeka_opay",
+      "status": "connected",
+      "linkedAt": "2026-06-12T02:00:00.000Z"
+    }
+  },
+  "accountStats": {
+    "acc_1": {
+      "accountId": "acc_1",
+      "avgInflowPerMonth": 85000,
+      "inflowFrequencyDays": 14,
+      "avgOutflowPerMonth": 78000,
+      "lastInflowAt": "2026-07-03T23:00:00.000Z",
+      "lastOutflowAt": "2026-07-06T01:00:00.000Z",
+      "updatedAt": "2026-07-07T02:00:00.000Z"
+    },
+    "acc_1_kuda": {
+      "accountId": "acc_1_kuda",
+      "avgInflowPerMonth": 45000,
+      "inflowFrequencyDays": 7,
+      "avgOutflowPerMonth": 40000,
+      "lastInflowAt": "2026-07-02T02:00:00.000Z",
+      "lastOutflowAt": "2026-07-05T00:00:00.000Z",
+      "updatedAt": "2026-07-07T02:00:00.000Z"
+    },
+    "acc_2": {
+      "accountId": "acc_2",
+      "avgInflowPerMonth": 240000,
+      "inflowFrequencyDays": 3,
+      "avgOutflowPerMonth": 210000,
+      "lastInflowAt": "2026-07-05T22:00:00.000Z",
+      "lastOutflowAt": "2026-07-07T00:00:00.000Z",
+      "updatedAt": "2026-07-07T02:00:00.000Z"
+    },
+    "acc_2_providus": {
+      "accountId": "acc_2_providus",
+      "avgInflowPerMonth": 180000,
+      "inflowFrequencyDays": 5,
+      "avgOutflowPerMonth": 160000,
+      "lastInflowAt": "2026-07-03T01:00:00.000Z",
+      "lastOutflowAt": "2026-07-06T02:00:00.000Z",
+      "updatedAt": "2026-07-07T02:00:00.000Z"
+    },
+    "acc_3": {
+      "accountId": "acc_3",
+      "avgInflowPerMonth": 450000,
+      "inflowFrequencyDays": 30,
+      "avgOutflowPerMonth": 380000,
+      "lastInflowAt": "2026-06-28T19:00:00.000Z",
+      "lastOutflowAt": "2026-07-04T23:00:00.000Z",
+      "updatedAt": "2026-07-07T02:00:00.000Z"
+    },
+    "acc_3_opay": {
+      "accountId": "acc_3_opay",
+      "avgInflowPerMonth": 120000,
+      "inflowFrequencyDays": 10,
+      "avgOutflowPerMonth": 100000,
+      "lastInflowAt": "2026-07-03T22:00:00.000Z",
+      "lastOutflowAt": "2026-07-06T01:00:00.000Z",
+      "updatedAt": "2026-07-07T02:00:00.000Z"
+    }
+  },
+  "transactions": {
+    "t_chidi_1": {
+      "id": "t_chidi_1",
+      "userId": "u_123",
+      "accountId": "acc_1",
+      "amount": 40000,
+      "type": "credit",
+      "channel": "transfer",
+      "narration": "FATHER ALLOWANCE",
+      "recipientType": "individual",
+      "category": "income",
+      "categorySource": "auto_matched",
+      "cashFlagPrompted": false,
+      "cashFlagAnswer": null,
+      "poolId": null,
+      "createdAt": "2026-06-22T17:00:00.000Z"
+    },
+    "t_chidi_2": {
+      "id": "t_chidi_2",
+      "userId": "u_123",
+      "accountId": "acc_1",
+      "amount": 15000,
+      "type": "debit",
+      "channel": "atm",
+      "narration": "GTB ATM IKEJA",
+      "recipientType": "unknown",
+      "category": "withdrawal",
+      "categorySource": "auto_matched",
+      "cashFlagPrompted": true,
+      "cashFlagAnswer": true,
+      "poolId": "pool_chidi_old",
+      "createdAt": "2026-06-22T18:00:00.000Z"
+    },
+    "t_chidi_3": {
+      "id": "t_chidi_3",
+      "userId": "u_123",
+      "accountId": "acc_1",
+      "amount": 3500,
+      "type": "debit",
+      "channel": "pos",
+      "narration": "MTN TOPUP VTU",
+      "recipientType": "merchant",
+      "category": "bills",
+      "categorySource": "auto_matched",
+      "cashFlagPrompted": false,
+      "cashFlagAnswer": null,
+      "poolId": null,
+      "createdAt": "2026-06-26T15:00:00.000Z"
+    },
+    "t_chidi_4": {
+      "id": "t_chidi_4",
+      "userId": "u_123",
+      "accountId": "acc_1",
+      "amount": 18000,
+      "type": "debit",
+      "channel": "pos",
+      "narration": "SHOPRITE IKEJA",
+      "recipientType": "merchant",
+      "category": "food",
+      "categorySource": "auto_matched",
+      "cashFlagPrompted": false,
+      "cashFlagAnswer": null,
+      "poolId": null,
+      "createdAt": "2026-07-03T13:00:00.000Z"
+    },
+    "t_chidi_5": {
+      "id": "t_chidi_5",
+      "userId": "u_123",
+      "accountId": "acc_1",
+      "amount": 25000,
+      "type": "debit",
+      "channel": "atm",
+      "narration": "GTB ATM UNILAG",
+      "recipientType": "unknown",
+      "category": "withdrawal",
+      "categorySource": "auto_matched",
+      "cashFlagPrompted": true,
+      "cashFlagAnswer": true,
+      "poolId": "pool_chidi_active",
+      "createdAt": "2026-07-04T21:00:00.000Z"
+    },
+    "t_chidi_6": {
+      "id": "t_chidi_6",
+      "userId": "u_123",
+      "accountId": "acc_1",
+      "amount": 4200,
+      "type": "debit",
+      "channel": "transfer",
+      "narration": "TRANSFER TO SEGUN",
+      "recipientType": "individual",
+      "category": null,
+      "categorySource": null,
+      "cashFlagPrompted": true,
+      "cashFlagAnswer": null,
+      "poolId": null,
+      "createdAt": "2026-07-06T02:00:00.000Z"
+    },
+    "t_chidi_k_1": {
+      "id": "t_chidi_k_1",
+      "userId": "u_123",
+      "accountId": "acc_1_kuda",
+      "amount": 30000,
+      "type": "credit",
+      "channel": "transfer",
+      "narration": "FREELANCE DESIGN GIG",
+      "recipientType": "individual",
+      "category": "income",
+      "categorySource": "auto_matched",
+      "cashFlagPrompted": false,
+      "cashFlagAnswer": null,
+      "poolId": null,
+      "createdAt": "2026-06-29T01:00:00.000Z"
+    },
+    "t_chidi_k_2": {
+      "id": "t_chidi_k_2",
+      "userId": "u_123",
+      "accountId": "acc_1_kuda",
+      "amount": 5200,
+      "type": "debit",
+      "channel": "pos",
+      "narration": "BOLT TAXI RIDE",
+      "recipientType": "merchant",
+      "category": "transport",
+      "categorySource": "user_tagged",
+      "cashFlagPrompted": false,
+      "cashFlagAnswer": null,
+      "poolId": null,
+      "createdAt": "2026-06-30T23:00:00.000Z"
+    },
+    "t_chidi_k_3": {
+      "id": "t_chidi_k_3",
+      "userId": "u_123",
+      "accountId": "acc_1_kuda",
+      "amount": 2500,
+      "type": "debit",
+      "channel": "pos",
+      "narration": "MAMA PUT CAMPUS",
+      "recipientType": "merchant",
+      "category": "food",
+      "categorySource": "auto_matched",
+      "cashFlagPrompted": false,
+      "cashFlagAnswer": null,
+      "poolId": null,
+      "createdAt": "2026-07-02T02:00:00.000Z"
+    },
+    "t_chidi_k_4": {
+      "id": "t_chidi_k_4",
+      "userId": "u_123",
+      "accountId": "acc_1_kuda",
+      "amount": 8000,
+      "type": "debit",
+      "channel": "pos",
+      "narration": "KUDA AGENT CASHOUT",
+      "recipientType": "merchant",
+      "category": "withdrawal",
+      "categorySource": "auto_matched",
+      "cashFlagPrompted": false,
+      "cashFlagAnswer": null,
+      "poolId": null,
+      "createdAt": "2026-07-05T17:00:00.000Z"
+    },
+    "t_funmi_1": {
+      "id": "t_funmi_1",
+      "userId": "u_456",
+      "accountId": "acc_2",
+      "amount": 80000,
+      "type": "credit",
+      "channel": "pos",
+      "narration": "POS SALES INFLOW MARKET",
+      "recipientType": "merchant",
+      "category": "income",
+      "categorySource": "auto_matched",
+      "cashFlagPrompted": false,
+      "cashFlagAnswer": null,
+      "poolId": null,
+      "createdAt": "2026-07-01T19:00:00.000Z"
+    },
+    "t_funmi_2": {
+      "id": "t_funmi_2",
+      "userId": "u_456",
+      "accountId": "acc_2",
+      "amount": 50000,
+      "type": "debit",
+      "channel": "atm",
+      "narration": "ACCESS ATM BALOGUN",
+      "recipientType": "unknown",
+      "category": "withdrawal",
+      "categorySource": "auto_matched",
+      "cashFlagPrompted": true,
+      "cashFlagAnswer": true,
+      "poolId": "pool_funmi_1",
+      "createdAt": "2026-07-02T17:00:00.000Z"
+    },
+    "t_funmi_3": {
+      "id": "t_funmi_3",
+      "userId": "u_456",
+      "accountId": "acc_2",
+      "amount": 12000,
+      "type": "debit",
+      "channel": "pos",
+      "narration": "BALOGUN WHOLESALE STORE",
+      "recipientType": "merchant",
+      "category": "inventory",
+      "categorySource": "user_tagged",
+      "cashFlagPrompted": false,
+      "cashFlagAnswer": null,
+      "poolId": null,
+      "createdAt": "2026-07-03T23:00:00.000Z"
+    },
+    "t_funmi_p_1": {
+      "id": "t_funmi_p_1",
+      "userId": "u_456",
+      "accountId": "acc_2_providus",
+      "amount": 145000,
+      "type": "credit",
+      "channel": "transfer",
+      "narration": "BULK CUSTOMER BANK TRANSFER",
+      "recipientType": "individual",
+      "category": "income",
+      "categorySource": "auto_matched",
+      "cashFlagPrompted": false,
+      "cashFlagAnswer": null,
+      "poolId": null,
+      "createdAt": "2026-07-01T01:00:00.000Z"
+    },
+    "t_funmi_p_2": {
+      "id": "t_funmi_p_2",
+      "userId": "u_456",
+      "accountId": "acc_2_providus",
+      "amount": 35000,
+      "type": "debit",
+      "channel": "atm",
+      "narration": "PROVIDUS ATM WITHDRAWAL",
+      "recipientType": "unknown",
+      "category": "withdrawal",
+      "categorySource": "auto_matched",
+      "cashFlagPrompted": false,
+      "cashFlagAnswer": null,
+      "poolId": null,
+      "createdAt": "2026-07-04T23:00:00.000Z"
+    },
+    "t_emeka_1": {
+      "id": "t_emeka_1",
+      "userId": "u_789",
+      "accountId": "acc_3",
+      "amount": 350000,
+      "type": "credit",
+      "channel": "transfer",
+      "narration": "INTERSWITCH CORP SALARY",
+      "recipientType": "merchant",
+      "category": "income",
+      "categorySource": "auto_matched",
+      "cashFlagPrompted": false,
+      "cashFlagAnswer": null,
+      "poolId": null,
+      "createdAt": "2026-06-20T19:00:00.000Z"
+    },
+    "t_emeka_2": {
+      "id": "t_emeka_2",
+      "userId": "u_789",
+      "accountId": "acc_3",
+      "amount": 60000,
+      "type": "debit",
+      "channel": "atm",
+      "narration": "ZENITH BANK ATM VI",
+      "recipientType": "unknown",
+      "category": "withdrawal",
+      "categorySource": "auto_matched",
+      "cashFlagPrompted": true,
+      "cashFlagAnswer": true,
+      "poolId": "pool_emeka_1",
+      "createdAt": "2026-06-22T01:00:00.000Z"
+    },
+    "t_emeka_3": {
+      "id": "t_emeka_3",
+      "userId": "u_789",
+      "accountId": "acc_3",
+      "amount": 18000,
+      "type": "debit",
+      "channel": "pos",
+      "narration": "THE SPAR LEKKI",
+      "recipientType": "merchant",
+      "category": "food",
+      "categorySource": "auto_matched",
+      "cashFlagPrompted": false,
+      "cashFlagAnswer": null,
+      "poolId": null,
+      "createdAt": "2026-06-24T22:00:00.000Z"
+    },
+    "t_emeka_4": {
+      "id": "t_emeka_4",
+      "userId": "u_789",
+      "accountId": "acc_3",
+      "amount": 15000,
+      "type": "debit",
+      "channel": "pos",
+      "narration": "EKO CLUB RESTAURANT",
+      "recipientType": "merchant",
+      "category": "entertainment",
+      "categorySource": "auto_matched",
+      "cashFlagPrompted": false,
+      "cashFlagAnswer": null,
+      "poolId": null,
+      "createdAt": "2026-06-27T17:00:00.000Z"
+    },
+    "t_emeka_o_1": {
+      "id": "t_emeka_o_1",
+      "userId": "u_789",
+      "accountId": "acc_3_opay",
+      "amount": 45000,
+      "type": "credit",
+      "channel": "transfer",
+      "narration": "OPAY SAVINGS INTEREST",
+      "recipientType": "merchant",
+      "category": "income",
+      "categorySource": "auto_matched",
+      "cashFlagPrompted": false,
+      "cashFlagAnswer": null,
+      "poolId": null,
+      "createdAt": "2026-06-25T02:00:00.000Z"
+    },
+    "t_emeka_o_2": {
+      "id": "t_emeka_o_2",
+      "userId": "u_789",
+      "accountId": "acc_3_opay",
+      "amount": 12500,
+      "type": "debit",
+      "channel": "transfer",
+      "narration": "TRANSFER TO MAMA",
+      "recipientType": "individual",
+      "category": null,
+      "categorySource": null,
+      "cashFlagPrompted": false,
+      "cashFlagAnswer": null,
+      "poolId": null,
+      "createdAt": "2026-06-30T00:00:00.000Z"
+    },
+    "t_emeka_o_3": {
+      "id": "t_emeka_o_3",
+      "userId": "u_789",
+      "accountId": "acc_3_opay",
+      "amount": 8000,
+      "type": "debit",
+      "channel": "atm",
+      "narration": "OPAY ATM WITHDRAWAL",
+      "recipientType": "unknown",
+      "category": "withdrawal",
+      "categorySource": "auto_matched",
+      "cashFlagPrompted": false,
+      "cashFlagAnswer": null,
+      "poolId": null,
+      "createdAt": "2026-07-03T19:00:00.000Z"
+    }
+  },
+  "cashPools": {
+    "pool_chidi_old": {
+      "id": "pool_chidi_old",
+      "userId": "u_123",
+      "accountId": "acc_1",
+      "amount": 15000,
+      "status": "expired",
+      "source": "atm_withdrawal",
+      "confidence": 0,
+      "linkedTransactionId": "t_chidi_2",
+      "createdAt": "2026-06-22T18:00:00.000Z",
+      "lastEvaluatedAt": "2026-07-07T02:00:00.000Z",
+      "closedAt": "2026-07-04T21:00:00.000Z",
+      "closedReason": "new_withdrawal"
+    },
+    "pool_chidi_active": {
+      "id": "pool_chidi_active",
+      "userId": "u_123",
+      "accountId": "acc_1",
+      "amount": 25000,
+      "status": "active",
+      "source": "atm_withdrawal",
+      "confidence": 0.71,
+      "linkedTransactionId": "t_chidi_5",
+      "createdAt": "2026-07-04T21:00:00.000Z",
+      "lastEvaluatedAt": "2026-07-07T02:00:00.000Z",
+      "closedAt": null,
+      "closedReason": null,
+      "expenses": [
+        {
+          "id": "exp_1",
+          "amount": 3000,
+          "category": "transport",
+          "narration": "Danfo bus cash",
+          "createdAt": "2026-07-05T15:00:00.000Z"
+        },
+        {
+          "id": "exp_2",
+          "amount": 4000,
+          "category": "food",
+          "narration": "Mama Put Rice",
+          "createdAt": "2026-07-06T01:00:00.000Z"
+        }
+      ]
+    },
+    "pool_funmi_1": {
+      "id": "pool_funmi_1",
+      "userId": "u_456",
+      "accountId": "acc_2",
+      "amount": 50000,
+      "status": "aging",
+      "source": "atm_withdrawal",
+      "confidence": 0.12,
+      "linkedTransactionId": "t_funmi_2",
+      "createdAt": "2026-07-02T17:00:00.000Z",
+      "lastEvaluatedAt": "2026-07-07T03:00:00.000Z",
+      "closedAt": null,
+      "closedReason": null,
+      "expenses": [
+        {
+          "id": "exp_3",
+          "amount": 15000,
+          "category": "inventory",
+          "narration": "Balogun market cart carrier fee",
+          "createdAt": "2026-07-03T19:00:00.000Z"
+        },
+        {
+          "id": "exp_3_b",
+          "amount": 12000,
+          "category": "fuel",
+          "narration": "Kerosene generator fuel for shop",
+          "createdAt": "2026-07-04T21:00:00.000Z"
+        },
+        {
+          "id": "exp_3_c",
+          "amount": 18000,
+          "category": "transport",
+          "narration": "Daily dispatch rider wholesale supply",
+          "createdAt": "2026-07-05T15:00:00.000Z"
+        }
+      ]
+    },
+    "pool_emeka_1": {
+      "id": "pool_emeka_1",
+      "userId": "u_789",
+      "accountId": "acc_3",
+      "amount": 60000,
+      "status": "expired",
+      "source": "atm_withdrawal",
+      "confidence": 0,
+      "linkedTransactionId": "t_emeka_2",
+      "createdAt": "2026-06-22T01:00:00.000Z",
+      "lastEvaluatedAt": "2026-07-07T03:00:00.000Z",
+      "closedAt": "2026-07-07T03:00:00.000Z",
+      "closedReason": "time_expired",
+      "expenses": [
+        {
+          "id": "exp_4",
+          "amount": 8000,
+          "category": "fuel",
+          "narration": "Fuel at Mobil Cash",
+          "createdAt": "2026-06-24T02:00:00.000Z"
+        },
+        {
+          "id": "exp_5",
+          "amount": 12000,
+          "category": "groceries",
+          "narration": "Market cash spend",
+          "createdAt": "2026-06-26T22:00:00.000Z"
+        }
+      ]
+    }
+  },
+  "merchantMemory": {
+    "u_123_shoprite_ikeja": {
+      "userId": "u_123",
+      "merchantKey": "shoprite_ikeja",
+      "category": "food",
+      "confidence": 0.95,
+      "timesConfirmed": 4,
+      "updatedAt": "2026-07-03T13:00:00.000Z"
+    },
+    "u_456_balogun_wholesale_store": {
+      "userId": "u_456",
+      "merchantKey": "balogun_wholesale_store",
+      "category": "inventory",
+      "confidence": 0.9,
+      "timesConfirmed": 3,
+      "updatedAt": "2026-07-03T23:00:00.000Z"
+    }
+  },
+  "insights": {
+    "ins_chidi_1": {
+      "id": "ins_chidi_1",
+      "userId": "u_123",
+      "accountScope": "acc_1",
+      "promptVersion": "insights.v1.relatable",
+      "triggerType": "post_transaction",
+      "inputSnapshot": {
+        "pools": [
+          "pool_chidi_active"
+        ],
+        "recentTransactionId": "t_chidi_4",
+        "burnCycleDays": 2.5,
+        "userProfile": {
+          "userType": "student",
+          "tone": "direct_friendly"
+        }
+      },
+      "inputHash": "8f9a2chidi",
+      "outputText": "You just spent ₦18,000 at Shoprite, which is almost half of today's bank cash, and it's three days earlier than you usually empty your pocket. Looks like you'll need to pace yourself on cash this week.",
+      "flagged": true,
+      "userReaction": null,
+      "generatedAt": "2026-07-03T13:00:00.000Z"
+    },
+    "ins_funmi_1": {
+      "id": "ins_funmi_1",
+      "userId": "u_456",
+      "accountScope": "acc_2",
+      "promptVersion": "insights.v1.relatable",
+      "triggerType": "post_transaction",
+      "inputSnapshot": {
+        "pools": [
+          "pool_funmi_1"
+        ],
+        "recentTransactionId": "t_funmi_3",
+        "burnCycleDays": 4,
+        "userProfile": {
+          "userType": "trader",
+          "tone": "direct_friendly"
+        }
+      },
+      "inputHash": "8f9a2funmi",
+      "outputText": "That wholesale purchase looks right in line with your normal restock cycles, but your cash pool is aging. Since Balogun carrier cash runs frequently, consider if you need a quick topup soon.",
+      "flagged": false,
+      "userReaction": null,
+      "generatedAt": "2026-07-03T23:00:00.000Z"
+    },
+    "ins_emeka_1": {
+      "id": "ins_emeka_1",
+      "userId": "u_789",
+      "accountScope": "acc_3",
+      "promptVersion": "insights.v1.relatable",
+      "triggerType": "post_transaction",
+      "inputSnapshot": {
+        "pools": [
+          "pool_emeka_1"
+        ],
+        "recentTransactionId": "t_emeka_4",
+        "burnCycleDays": 8.5,
+        "userProfile": {
+          "userType": "salaried",
+          "tone": "direct_friendly"
+        }
+      },
+      "inputHash": "8f9a2emeka",
+      "outputText": "Nice weekend out at Eko Club, but that restaurant spend is a bit of a pattern breaker. Note that your ₦60,000 ATM cash pool from 15 days ago has fully expired and faded to 0% confidence. Any remaining physical cash is likely unlogged leakage; you should log a new cashout to restore fidelity.",
+      "flagged": true,
+      "userReaction": null,
+      "generatedAt": "2026-07-04T17:00:00.000Z"
+    }
+  },
+  "agentConversations": {
+    "conv_chidi": {
+      "id": "conv_chidi",
+      "userId": "u_123",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Should I buy this ₦20,000 jacket?",
+          "at": "2026-07-05T17:00:00.000Z"
+        },
+        {
+          "role": "agent",
+          "text": "That'd leave you pretty tight for the next few days based on your usual pace... You only have ₦18,000 left in cash confidence and your next inflow isn't for another 11 days.",
+          "promptVersion": "insights.v1.relatable",
+          "at": "2026-07-05T17:00:00.000Z"
+        }
+      ],
+      "createdAt": "2026-07-05T17:00:00.000Z"
+    },
+    "conv_1783870712283": {
+      "id": "conv_1783870712283",
+      "userId": "u_789",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Hello pal",
+          "at": "2026-07-12T15:38:31.959Z"
+        },
+        {
+          "role": "agent",
+          "text": "<think>\n1. User profile check: Emeka Obi (salaried).\n2. Goal review: build_savings_habit.\n3. Analysis: Active pocket cash has around ₦40800 left.\n4. Strategy: Directly answer the user's query dynamically with a conversational local fallback.\n</think>\n\nHey Emeka Obi, hello! I'm your FinI financial companion. Let's keep your pocket cash in check. What spending decision or cash run are we reviewing today?",
+          "at": "2026-07-12T15:38:32.959Z",
+          "source": "local-fallback"
+        },
+        {
+          "role": "user",
+          "text": "what are you upto",
+          "at": "2026-07-12T15:38:45.673Z"
+        },
+        {
+          "role": "agent",
+          "text": "<think>\n1. User profile check: Emeka Obi (salaried).\n2. Goal review: build_savings_habit.\n3. Analysis: Active pocket cash has around ₦40800 left.\n4. Strategy: Directly answer the user's query dynamically with a conversational local fallback.\n</think>\n\nHey Emeka Obi, Back to that purchase decision we were reviewing. I hear you on your last message about \"what are you upto\". Let's work together to trace where that physical pocket cash is fading. We estimate you have ₦40800 left on hand. What is our next step?",
+          "at": "2026-07-12T15:38:46.673Z",
+          "source": "local-fallback"
+        },
+        {
+          "role": "user",
+          "text": "how are you",
+          "at": "2026-07-12T15:51:55.206Z"
+        },
+        {
+          "role": "agent",
+          "text": "<think>\n1. User profile check: Emeka Obi (salaried).\n2. Goal review: build_savings_habit.\n3. Analysis: Active pocket cash has around ₦40800 left.\n4. Strategy: Directly answer the user's query dynamically with a conversational local fallback.\n</think>\n\nHey Emeka Obi, Continuing with our look at your cash fading rate. I hear you on your last message about \"how are you\". Let's work together to trace where that physical pocket cash is fading. We estimate you have ₦40800 left on hand. What is our next step?",
+          "at": "2026-07-12T15:51:56.206Z",
+          "source": "local-fallback"
+        },
+        {
+          "role": "user",
+          "text": "Hello",
+          "at": "2026-07-12T15:53:59.207Z"
+        },
+        {
+          "role": "agent",
+          "text": "<think>\n1. User profile check: Emeka Obi (salaried).\n2. Goal review: build_savings_habit.\n3. Analysis: Active pocket cash has around ₦40800 left.\n4. Strategy: Directly answer the user's query dynamically with a conversational local fallback.\n</think>\n\nHey Emeka Obi, Continuing with our look at your cash fading rate. hello! I'm your FinI financial companion. Let's keep your pocket cash in check. What spending decision or cash run are we reviewing today?",
+          "at": "2026-07-12T15:54:00.207Z",
+          "source": "local-fallback"
+        },
+        {
+          "role": "user",
+          "text": "hi",
+          "at": "2026-07-12T15:54:04.412Z"
+        },
+        {
+          "role": "agent",
+          "text": "<think>\n1. User profile check: Emeka Obi (salaried).\n2. Goal review: build_savings_habit.\n3. Analysis: Active pocket cash has around ₦40800 left.\n4. Strategy: Directly answer the user's query dynamically with a conversational local fallback.\n</think>\n\nHey Emeka Obi, Back to that purchase decision we were reviewing. hello! I'm your FinI financial companion. Let's keep your pocket cash in check. What spending decision or cash run are we reviewing today?",
+          "at": "2026-07-12T15:54:05.412Z",
+          "source": "local-fallback"
+        },
+        {
+          "role": "user",
+          "text": "how are you doing",
+          "at": "2026-07-12T15:54:17.808Z"
+        },
+        {
+          "role": "agent",
+          "text": "<think>\n1. User profile check: Emeka Obi (salaried).\n2. Goal review: build_savings_habit.\n3. Analysis: Active pocket cash has around ₦40800 left.\n4. Strategy: Directly answer the user's query dynamically with a conversational local fallback.\n</think>\n\nHey Emeka Obi, Back to that purchase decision we were reviewing. I hear you on your last message about \"how are you doing\". Let's work together to trace where that physical pocket cash is fading. We estimate you have ₦40800 left on hand. What is our next step?",
+          "at": "2026-07-12T15:54:18.808Z",
+          "source": "local-fallback"
+        },
+        {
+          "role": "user",
+          "text": "how are ou doing",
+          "at": "2026-07-12T15:55:01.942Z"
+        },
+        {
+          "role": "agent",
+          "text": "<think>\n1. User profile check: Emeka Obi.\n2. Analyzing conversational question: \"how are ou doing\".\n3. Strategy: Responding directly with supportive financial accountant advice.\n</think>\n\nI'm doing really well, thanks for checking in! I was just admiring that ₦45k savings interest you got recently—it's a nice little boost for your pocket. Since you're focusing on building that savings habit, are we letting that interest roll, or did you need to pull that ₦8k cash for your usual week-to-week spending?",
+          "at": "2026-07-12T15:55:02.942Z",
+          "source": "fireworks-primary"
+        }
+      ],
+      "createdAt": "2026-07-12T15:38:31.959Z"
+    }
+  }
+}
